@@ -4,15 +4,13 @@
   "version": "0.0.1",
   "description": "The official MCP Server for the Gizmo API",
   "author": {
-    "name": "Gizmo",
-    "email": ""
+    "name": "Gizmo"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/stainless-sdks/gizmo-typescript.git"
   },
   "homepage": "https://github.com/stainless-sdks/gizmo-typescript/tree/main/packages/mcp-server#readme",
-  "documentation": "",
   "server": {
     "type": "node",
     "entry_point": "${__dirname}/index.js",
