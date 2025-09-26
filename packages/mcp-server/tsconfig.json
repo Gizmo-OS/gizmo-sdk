@@ -7,10 +7,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "./",
     "paths": {
-      "gizmo-mcp/*": ["src/*"],
-      "gizmo-mcp": ["src/index.ts"]
+      "gizmo-mcp/*": ["./src/*"],
+      "gizmo-mcp": ["./src/index.ts"]
     },
     "noEmit": true,
 

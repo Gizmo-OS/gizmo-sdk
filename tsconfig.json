@@ -7,10 +7,9 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "esModuleInterop": true,
-    "baseUrl": "./",
     "paths": {
-      "gizmo/*": ["src/*"],
-      "gizmo": ["src/index.ts"]
+      "gizmo/*": ["./src/*"],
+      "gizmo": ["./src/index.ts"]
     },
     "noEmit": true,
 
