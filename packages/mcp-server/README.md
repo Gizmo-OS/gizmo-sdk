@@ -9,8 +9,8 @@ It is generated with [Stainless](https://www.stainless.com/).
 Because it's not published yet, clone the repo and build it:
 
 ```sh
-git clone git@github.com:stainless-sdks/gizmo-typescript.git
-cd gizmo-typescript
+git clone git@github.com:Gizmo-OS/gizmo-sdk.git
+cd gizmo-sdk
 ./scripts/bootstrap
 ./scripts/build
 ```
@@ -41,7 +41,7 @@ For clients with a configuration JSON, it might look something like this:
   "mcpServers": {
     "gizmo_api": {
       "command": "node",
-      "args": ["/path/to/local/gizmo-typescript/packages/mcp-server", "--client=claude", "--tools=all"],
+      "args": ["/path/to/local/gizmo-sdk/packages/mcp-server", "--client=claude", "--tools=all"],
       "env": {
         "GIZMO_API_KEY": "My API Key",
         "GIZMO_ENVIRONMENT": "production"
