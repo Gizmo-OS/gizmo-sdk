@@ -39,6 +39,7 @@ export async function codeTool() {
       },
       body: JSON.stringify({
         project_name: 'gizmo',
+        client_opts: { environment: (readEnv('GIZMO_ENVIRONMENT') || undefined) as any },
         code,
       }),
     });
