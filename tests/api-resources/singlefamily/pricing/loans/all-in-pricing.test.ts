@@ -5,7 +5,7 @@ import Gizmo from 'gizmo';
 const client = new Gizmo({ baseURL: process.env['TEST_API_BASE_URL'] ?? 'http://127.0.0.1:4010' });
 
 describe('resource allInPricing', () => {
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createWholeLoanPricing: only required params', async () => {
     const responsePromise = client.singlefamily.pricing.loans.allInPricing.createWholeLoanPricing({
       Context: {},
@@ -35,7 +35,7 @@ describe('resource allInPricing', () => {
     expect(dataAndResponse.response).toBe(rawResponse);
   });
 
-  // Prism tests are disabled
+  // Mock server tests are disabled
   test.skip('createWholeLoanPricing: required and optional params', async () => {
     const response = await client.singlefamily.pricing.loans.allInPricing.createWholeLoanPricing({
       Context: {

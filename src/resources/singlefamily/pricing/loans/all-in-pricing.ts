@@ -6,6 +6,9 @@ import { APIPromise } from '../../../../core/api-promise';
 import { buildHeaders } from '../../../../internal/headers';
 import { RequestOptions } from '../../../../internal/request-options';
 
+/**
+ * The Loan Pricing API provides lenders and technology service providers with a single, transparent response, combining various price factors to support informed best execution.
+ */
 export class AllInPricing extends APIResource {
   /**
    * Returns loan-level all-in pricing and individual pricing components for
