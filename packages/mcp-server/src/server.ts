@@ -16,14 +16,20 @@ import { blockedMethodsForCodeTool } from './methods';
 import { HandlerFunction, McpRequestContext, ToolCallResult, McpTool } from './types';
 import { readEnv } from './util';
 
-export const newMcpServer = async (stainlessApiKey: string | undefined) =>
+export const newMcpServer = async ({
+  stainlessApiKey,
+  customInstructionsPath,
+}: {
+  stainlessApiKey?: string | undefined;
+  customInstructionsPath?: string | undefined;
+}) =>
   new McpServer(
     {
       name: 'gizmo_api',
       version: '0.0.1',
     },
     {
-      instructions: await getInstructions(stainlessApiKey),
+      instructions: await getInstructions({ stainlessApiKey, customInstructionsPath }),
       capabilities: { tools: {}, logging: {} },
     },
   );
