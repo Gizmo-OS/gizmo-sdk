@@ -115,6 +115,7 @@ export function parseCLIOptions(): CLIOptions {
     ...(includeCodeTool !== undefined && { includeCodeTool }),
     debug: !!argv.debug,
     stainlessApiKey: argv.stainlessApiKey,
+
     codeAllowHttpGets: argv.codeAllowHttpGets,
     codeAllowedMethods: argv.codeAllowedMethods,
     codeBlockedMethods: argv.codeBlockedMethods,
